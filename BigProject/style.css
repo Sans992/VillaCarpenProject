@@ -10,15 +10,31 @@ body{
 	background-color:rgba(26, 24, 21, 84%);
 	transition: all 0.5s ease;
 	max-width:100%;
+	height:auto;
 }
 .head:hover{
 	background-color:rgba(26, 24, 21, 99%);
 	display:block;
 }
+.head table {
+    width: 100%;
+    max-width: 1200px; 
+    height: 80px; 
+    margin: 0 auto; 
+    table-layout: fixed; 
+}
+
+.head th {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+}
 
 .logo{
     display:block;  
 	width:105px;
+	max-width:100%;
+	height:auto;
 }
 
 .textop{
@@ -26,11 +42,14 @@ body{
 	font-size:17px;
 	text-decoration:none;
 	transition: text-decoration 1s ease;
-	bottom:30px;
+	max-width:100%;
+	height:auto;
 }
 
 .mimg{
 	width:30px;
+	max-width:100%;
+	height:auto;
 }
 
 .textop0{
@@ -38,11 +57,14 @@ body{
 	font-size:17px;
 	text-decoration:none;
 	transition: text-decoration 1s ease;
+	max-width:100%;
+	height:auto;
 }
 
 .mimg0{
 	width:30px;
 	max-width:100%;
+	height:auto;
 }
 
 .textop1{
@@ -50,11 +72,14 @@ body{
 	font-size:17px;
 	text-decoration:none;
 	transition: text-decoration 0.3s ease;
+	max-width:100%;
+	height:auto;
 }
 
 .mimg1{
 	width:28px;
 	max-width:100%;
+	height:auto;
 }
 
 .textop2{
@@ -62,11 +87,14 @@ body{
 	font-size:17px;
 	text-decoration:none;
 	transition: text-decoration 0.3s ease;
+	max-width:100%;
+	height:auto;
 }
 
 .mimg2{
 	width:27px;
 	max-width:100%;
+	height:auto;
 }
 
 .textop:hover, .textop0:hover, .textop1:hover, .textop2:hover{
@@ -98,10 +126,14 @@ footer{
 	background-color:rgb(23, 21, 18);
 	height:80px;
 	border: 10px solid rgb(21, 19, 16);
+	max-width:100%;
+	height:auto;
 }
 .insta{
 	width: 30px; 
 	transition: all 1s ease;
+	max-width:100%;
+	height:auto;
 }
 .insta:hover{
 	content: url('image/instacu.png');
@@ -110,6 +142,8 @@ footer{
 .face{
 	width: 30px; 
 	transition: all 1s ease;
+	max-width:100%;
+	height:auto;
 }
 .face:hover{
 	content: url('image/facebookcu.png')
