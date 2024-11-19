@@ -1,16 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const hiddenElements = document.querySelectorAll('.hidden');
+    const modal = document.getElementById('modal');
+    const openModal = document.getElementById('openModal');
+    const closeModal = document.querySelector('.close');
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animated'); // Adaugă clasa pentru animație
-                observer.unobserve(entry.target); // Dezactivează observarea pentru element
-            }
-        });
-    }, {
-        threshold: 0.1 // Elementul trebuie să fie 10% vizibil pentru a declanșa animația
-    });
+    openModal.onclick = () => {
+        modal.style.display = 'flex'; // Afișează modalul doar când este apăsat butonul
+    };
 
-    hiddenElements.forEach(el => observer.observe(el));
+    closeModal.onclick = () => {
+        modal.style.display = 'none'; // Ascunde modalul când este apăsat butonul de închidere
+    };
+
+    window.onclick = (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none'; // Ascunde modalul la click în afara conținutului
+        }
+    };
 });

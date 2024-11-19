@@ -9,11 +9,11 @@
 <body>
 <script src="script.js"></script>
 	<header class="head head animated">
-		<table style="margin-top:-5px">
+		<table style="margin-top:-6px">
 			<tr>
 				<th width="10%">
 					<a href="page/meniu.html" class="textop"> Meniu</a>
-					<a href="page/meniu.html"><img src="image/rest.png" class="mimg"></a>
+					<a href="page/meniu.html"><img src="image/menu.png" class="mimg"></a>
 				</th>
 				<th width="11%">
 					<a href="page/contacte.html" class="textop0">Contacte</a>
@@ -21,7 +21,7 @@
 				</th>
 				<th width="11%">
 					<a href="page/despre.html" class="textop1">Despre noi</a>
-					<a href="page/despre.html"><img src="image/info.png" class="mimg1"></a>
+					<a href="page/despre.html"><img src="image/about.png" class="mimg1"></a>
 				</th>
 				<th width="11%">
 					<a href="page/event.html" class="textop2">Evenimente</a>
@@ -31,7 +31,7 @@
 					<a href="index.html"><img src="image/logo.png" alt="Logo" class="logo" ></a>
 				</th>
 				<th >
-					<p style="margin-left:70%;margin-top:7%;" class="rezerva" width="0.01%">Rezervare</p>
+					<p style="margin-left:60%;margin-top:7%;" class="rezerva" width="0.01%" id="openModal">Rezervare</p>
 				</th>
 			</tr>
 		</table>
@@ -41,7 +41,7 @@
 			</video><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<nav style="margin-top:-60px">
 				<h1 style="margin-left:80px;font-size:40px;animation: slideLeft 1s ease-out forwards;" >Petrece cele mai frumoase momente<br> impreuna cu VillaCarpen</h1>
-				<p style="margin-left:80px;animation: slideLeft 1s ease-out forwards;" class="rezerva openModal">Rezervare</p>
+				<p style="margin-left:80px;animation: slideLeft 1s ease-out forwards;" class="rezerva" id="openModal">Rezervare</p>
 			</nav>
 			<br><br><br><br><br><br><br><br>
 		<div class="container" style="padding:60px;">
@@ -104,5 +104,20 @@
 						<p style="text-align:center">&copy</p>
 			</table>
 		</footer>
+<!--<div id="modal" class="modal" >
+		<div class="modal-content" style="background-color:rgb(26, 24, 21);color:rgb(190, 188, 185)">
+			<span class="close">&times;</span>
+			<h2>Introducere date pentru rezervare</h2>
+			<form >
+				<label for="name">Nume:</label>
+				<input type="text" id="name" name="name" required><br><br>
+				<label for="date">Data:</label>
+				<input type="date" id="date" name="date" required><br><br>
+				<label for="time">Ora:</label>
+				<input type="time" id="time" name="time" required><br><br>
+				<button type="submit">Trimite</button>
+			</form>
+		</div>
+	</div>-->
 </body>
 </html>

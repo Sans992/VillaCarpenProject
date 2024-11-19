@@ -64,7 +64,7 @@ body{
 }
 
 .mimg{
-	width:25px;
+	width:27px;
 	max-width:100%;
 	height:auto;
 }
@@ -94,7 +94,7 @@ body{
 }
 
 .mimg1{
-	width:24px;
+	width:22px;
 	max-width:100%;
 	height:auto;
 }
@@ -114,6 +114,12 @@ body{
 	height:auto;
 }
 
+.mimg3{
+	width:25px;
+	max-width:100%;
+	height:auto;
+}	
+
 .textop:hover, .textop0:hover, .textop1:hover, .textop2:hover{
 	text-decoration:underline;
 }
@@ -129,12 +135,10 @@ video {
 	display:block;
 	opacity:45%;
 }
-p{
+p, h1{
 	color:rgb(209, 204, 194)
 }
-h1{
-	color:rgb(209, 204, 194)
-}
+
 div{
 	background-color:rgb(26, 24, 21);
 	margin:-8px;
@@ -147,7 +151,7 @@ footer{
 	border: 10px solid rgb(21, 19, 16);
 	max-width:100%;
 	height:auto;
-	margin:-10px;
+	margin:-8px;
 }
 .insta{
 	width: 30px; 
@@ -251,7 +255,6 @@ footer{
     }
 }
 
-/* Configurare generală pentru imagini și text */
 .container img, .container p, .container h1 {
     margin: 20px auto;
     display: block;
@@ -259,21 +262,21 @@ footer{
 }
 @media (max-width: 768px) {
     h1.animated-title {
-        font-size: 40px; /* Dimensiuni mai mici pentru text */
+        font-size: 40px; 
     }
 
     img.animated-image-left, img.animated-image-right {
-        width: 100%; /* Imaginile se ajustează la lățimea ecranului */
-        box-shadow: none; /* Eliminăm umbrele dacă e necesar */
+        width: 100%; 
+        box-shadow: none; 
     }
 
     p.animated-text-right, p.animated-text-left {
-        font-size: 16px; /* Dimensiuni mai mici pentru paragrafe */
+        font-size: 16px; 
     }
 }
 .rezerva {
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -282,6 +285,7 @@ footer{
     transition: all 0.5s ease;
     animation: slideDown 1s ease-out forwards;
     opacity: 0;
+	color:rgb(190, 188, 185);
 }
 
 .rezerva:hover {
@@ -290,19 +294,18 @@ footer{
     color: rgb(26, 24, 21);
 }
 .modal {
-    display: none; /* Ascuns implicit */
+    display: none; 
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundal semi-transparent */
+    background-color: rgba(0, 0, 0, 0.5); 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 /* Conținutul modalului */
 .modal-content {
     background-color: #fff;
@@ -315,8 +318,8 @@ footer{
 /* Butonul de închidere */
 .close {
     position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
+    top: 10px; 
+    right: 10px;
+    font-size: 24px; 
     cursor: pointer;
 }
