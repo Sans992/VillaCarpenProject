@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head>
     <title>VillaCarpen</title>
     <meta charset="UTF-8">
@@ -7,55 +7,64 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header class="head">
-		<table>
+<script src="script.js"></script>
+	<header class="head head animated">
+		<table style="margin-top:-5px">
 			<tr>
-				<th >
+				<th width="10%">
 					<a href="page/meniu.html" class="textop"> Meniu</a>
 					<a href="page/meniu.html"><img src="image/rest.png" class="mimg"></a>
 				</th>
-				<th>
+				<th width="11%">
 					<a href="page/contacte.html" class="textop0">Contacte</a>
 					<a href="page/contacte.html"><img src="image/tel.png" class="mimg0"></a>
 				</th>
-				<th width="10%">
-					<a href="index.html"><img src="image/logo.png" alt="Logo" class="logo" ></a>
-				</th>
-				<th >
+				<th width="11%">
 					<a href="page/despre.html" class="textop1">Despre noi</a>
 					<a href="page/despre.html"><img src="image/info.png" class="mimg1"></a>
 				</th>
-				<th >
+				<th width="11%">
 					<a href="page/event.html" class="textop2">Evenimente</a>
 					<a href="page/event.html"><img src="image/event.png" class="mimg2"></a>
+				</th>
+				<th >
+					<a href="index.html"><img src="image/logo.png" alt="Logo" class="logo" ></a>
+				</th>
+				<th >
+					<p style="margin-left:70%;margin-top:7%;" class="rezerva" width="0.01%">Rezervare</p>
 				</th>
 			</tr>
 		</table>
 		</header>
-			<video autoplay muted loop id="videoback" alt="video pe fundal">
+			<video autoplay muted loop id="videoback" alt="video pe fundal" >
 				<source src="video/cooking.mp4" type="video/mp4" size="100px">
-			</video><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<div>
+			</video><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<nav style="margin-top:-60px">
+				<h1 style="margin-left:80px;font-size:40px;animation: slideLeft 1s ease-out forwards;" >Petrece cele mai frumoase momente<br> impreuna cu VillaCarpen</h1>
+				<p style="margin-left:80px;animation: slideLeft 1s ease-out forwards;" class="rezerva openModal">Rezervare</p>
+			</nav>
+			<br><br><br><br><br><br><br><br>
+		<div class="container" style="padding:60px;">
 				<br><br><br><br><br>
-			<h1 style="text-align:center;font-size:60px">Villa Carpen</h1><br><br><br><br><br>
+			<h1 style="text-align:center;font-size:60px" class="hidden animated-title">Villa Carpen</h1><br><br><br><br><br>
 			<section>
 				<table style="border:none;">
 					<tr>
 						<th><br><br><br><br><br>
-							<img src="image/poza0.png" style="width:700px;box-shadow: -12px 12px 1px 0px rgb(209, 204, 194);">
+							<img src="image/poza0.png" style="width:700px;box-shadow: -12px 12px 1px 0px rgb(209, 204, 194);" alt="Image" class="hidden animated-image-left">
 						</th>
 						<th>
-							<p style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum vehicula volutpat. Suspendisse tincidunt eu sem vel ultrices.
+							<p style="font-size:20px;" class="hidden animated-text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum vehicula volutpat. Suspendisse
 								Nulla dictum orci eu tellus placerat, eu bibendum eros ullamcorper. Nullam hendrerit est sit amet lectus imperdiet, id bibendum massa
 								bibendum. Class aptent taciti sociosqu ad torquent per conubia nostra, per inceptos himenaeos. Quisque volutpat ligula quis
 								sapien fermentum, id tincidunt ex cursus. Sed ante libero, malesuada aliquam pretium quis, suscipit ac velit. Maecenas semper risus
-								non lorem varius venenatis. Morbi ut felis in ex vehicula gravida. Donec dignissim vehicula consectetur. Mauris pellentesque est hendrerit scelerisque dapibus.
+								non lorem varius venenatis. Morbi ut felis in ex vehicula gravida. Donec dignissim vehicula consectetur. Mauris pellentesque est hendrerit scelerisque dapibuss.
 							</p>
 						</th>
 					</tr>
 					<tr>
-						<th><br><br><br><br><br>
-							<p style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum vehicula volutpat. Suspendisse tincidunt eu sem vel  ultrices.
+						<th>
+							<p style="font-size:20px;" class="hidden animated-text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum vehicula volutpat.
 								Nulla dictum orci eu tellus placerat, eu bibendum  ullamcorper. Nullam hendrerit est sit amet lectus imperdiet,  bibendum massa
 								bibendum. Class aptent taciti sociosqu ad  litora torquent per conubia nostra, per inceptos himenaeos.  Quisque volutpat ligula quis
 								sapien fermentum, id tincidunt  cursus. Sed ante libero, malesuada aliquam pretium quis, suscipit ac velit. Maecenas semper risus
@@ -63,15 +72,15 @@
 							</p>
 						</th>
 						<th>
-							<img src="image/poza0.png" style="width:700px;box-shadow: 12px 12px 1px 0px rgb(209, 204, 194);">
+							<img src="image/poza0.png" style="width:700px;box-shadow: 12px 12px 1px 0px rgb(209, 204, 194);" alt="Image" class="hidden animated-image-right">
 						</th>
 					</tr>
 					<tr>
-						<th><br><br><br><br><br>
-							<img src="image/poza0.png" style="width:700px;box-shadow: -12px 12px 1px 0px rgb(209, 204, 194);"> 
+						<th>
+							<img src="image/poza0.png" style="width:700px;box-shadow: -12px 12px 1px 0px rgb(209, 204, 194);" alt="Image" class="hidden animated-image-left"> 
 						</th>
 						<th>
-							<p style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum vehicula volutpat. Suspendisse tincidunt eu sem vel ultrices.
+							<p style="font-size:20px;" class="hidden animated-text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum vehicula volutpat. Suspendisse 
 								Nulla dictum orci eu tellus placerat, eu bibendum eros ullamcorper. Nullam hendrerit est sit amet lectus imperdiet, id bibendum massa
 								bibendum. Class aptent taciti sociosqu ad torquent per conubia nostra, per inceptos himenaeos. Quisque volutpat ligula quis
 								sapien fermentum, id tincidunt ex cursus. Sed ante libero, malesuada aliquam pretium quis, suscipit ac velit. Maecenas semper risus

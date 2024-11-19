@@ -1,31 +1,48 @@
 body{
 	background-color:rgb(26, 24, 21);
-	font-family: Geneva, Verdana, sans-serif;
+	 font-family: 'Times New Roman', serif;
 }
 
 .head {
-	border: 3px solid rgb(94, 93, 89);
-	border-radius: 10px;
-	box-shadow: 2px 2px 2px rgb(208, 205, 197);
-	background-color:rgba(26, 24, 21, 84%);
-	transition: all 0.5s ease;
-	max-width:100%;
-	height:auto;
+    border: 3px solid rgb(94, 93, 89);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(208, 205, 197);
+    background-color: rgba(26, 24, 21, 60%);
+    transition: all 0.5s ease;
+    max-width: 100%;
+    height: auto;
+    animation: slideDown 1s ease-out forwards; /* Aplică animația */
+    opacity: 0; /* Ascunde inițial */
 }
-.head:hover{
-	background-color:rgba(26, 24, 21, 99%);
-	display:block;
+
+
+.head:hover {
+    background-color: rgba(26, 24, 21, 99%);
+    display: block;
 }
+
+/* Animația pentru a aduce elementul de sus */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100px); /* Pornește din afara ecranului */
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); /* Revine la poziția inițială */
+        opacity: 1;
+    }
+}
+
 .head table {
     width: 100%;
-    max-width: 1200px; 
+    max-width: 1400px; 
     height: 80px; 
     margin: 0 auto; 
     table-layout: fixed; 
 }
 
 .head th {
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
     padding: 5px;
 }
@@ -47,7 +64,7 @@ body{
 }
 
 .mimg{
-	width:30px;
+	width:25px;
 	max-width:100%;
 	height:auto;
 }
@@ -62,7 +79,7 @@ body{
 }
 
 .mimg0{
-	width:30px;
+	width:26px;
 	max-width:100%;
 	height:auto;
 }
@@ -77,7 +94,7 @@ body{
 }
 
 .mimg1{
-	width:28px;
+	width:24px;
 	max-width:100%;
 	height:auto;
 }
@@ -92,7 +109,7 @@ body{
 }
 
 .mimg2{
-	width:27px;
+	width:23px;
 	max-width:100%;
 	height:auto;
 }
@@ -110,6 +127,7 @@ video {
     object-fit: cover;
     z-index: -1;
 	display:block;
+	opacity:45%;
 }
 p{
 	color:rgb(209, 204, 194)
@@ -119,6 +137,7 @@ h1{
 }
 div{
 	background-color:rgb(26, 24, 21);
+	margin:-8px;
 	
 }
 footer{
@@ -128,6 +147,7 @@ footer{
 	border: 10px solid rgb(21, 19, 16);
 	max-width:100%;
 	height:auto;
+	margin:-10px;
 }
 .insta{
 	width: 30px; 
@@ -147,4 +167,156 @@ footer{
 }
 .face:hover{
 	content: url('image/facebookcu.png')
+}
+.mimg, .mimg0, .mimg1, .mimg2 {
+    margin-bottom: -6px;
+}
+/* Ascundere inițială pentru toate elementele */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: all 0.5s ease-out;
+}
+
+.hidden.animated {
+    visibility: visible; /* Devine vizibil */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animație pentru textul <h1>: de jos în sus */
+.animated-title {
+    font-size: 60px;
+    text-align: center;
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+/* Prima imagine: din stânga spre dreapta */
+.animated-image-left {
+    width: 700px;
+    box-shadow: -12px 12px 1px 0px rgb(209, 204, 194);
+    animation: slideLeft 1s ease-out forwards;
+}
+
+/* A doua imagine: din dreapta spre stânga */
+.animated-image-right {
+    width: 700px;
+    box-shadow: 12px 12px 1px 0px rgb(209, 204, 194);
+    animation: slideRight 1s ease-out forwards;
+}
+
+/* Primul paragraf: din dreapta spre stânga */
+.animated-text-right {
+    font-size: 20px;
+    animation: slideRight 1s ease-out forwards;
+}
+
+/* Al doilea paragraf: din stânga spre dreapta */
+.animated-text-left {
+    font-size: 20px;
+    animation: slideLeft 1s ease-out forwards;
+}
+
+/* Keyframes pentru animații */
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px); /* Pornește de jos */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* Poziția finală */
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-100px); /* Pornește din stânga */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* Poziția finală */
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(100px); /* Pornește din dreapta */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* Poziția finală */
+        opacity: 1;
+    }
+}
+
+/* Configurare generală pentru imagini și text */
+.container img, .container p, .container h1 {
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    h1.animated-title {
+        font-size: 40px; /* Dimensiuni mai mici pentru text */
+    }
+
+    img.animated-image-left, img.animated-image-right {
+        width: 100%; /* Imaginile se ajustează la lățimea ecranului */
+        box-shadow: none; /* Eliminăm umbrele dacă e necesar */
+    }
+
+    p.animated-text-right, p.animated-text-left {
+        font-size: 16px; /* Dimensiuni mai mici pentru paragrafe */
+    }
+}
+.rezerva {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(190, 185, 175);
+    background-color: rgb(26, 24, 21, );
+    transition: all 0.5s ease;
+    animation: slideDown 1s ease-out forwards;
+    opacity: 0;
+}
+
+.rezerva:hover {
+    border: 3px solid rgba(26, 24, 21, 30%);
+    background-color: rgb(190, 185, 175);
+    color: rgb(26, 24, 21);
+}
+.modal {
+    display: none; /* Ascuns implicit */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundal semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conținutul modalului */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+/* Butonul de închidere */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
 }
