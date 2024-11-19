@@ -16,7 +16,7 @@ Website for a restaurant named VillaCarpen from Moldova
 - Meniu
 - Contacte
 - Despre noi
-- Evente
+- Evenimente
 
 
 # Roadmap
