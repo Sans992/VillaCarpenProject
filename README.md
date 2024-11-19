@@ -29,3 +29,5 @@ Website for a restaurant named VillaCarpen from Moldova
 
 - Backend pentru admin
 
+- Culori noi
+
