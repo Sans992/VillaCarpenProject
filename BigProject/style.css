@@ -1,6 +1,6 @@
 body{
 	background-color:rgb(26, 24, 21);
-	 font-family: 'Times New Roman', serif;
+	font-family: 'Times New Roman', serif;
 }
 
 .head {
@@ -55,7 +55,7 @@ body{
 }
 
 .textop{
-	color: rgb(190, 188, 185);
+	color: rgb(230, 230, 230);
 	font-size:17px;
 	text-decoration:none;
 	transition: text-decoration 1s ease;
@@ -70,7 +70,7 @@ body{
 }
 
 .textop0{
-	color: rgb(190, 188, 185);
+	color: rgb(230, 230, 230);
 	font-size:17px;
 	text-decoration:none;
 	transition: text-decoration 1s ease;
@@ -85,7 +85,7 @@ body{
 }
 
 .textop1{
-	color: rgb(190, 188, 185);
+	color: rgb(230, 230, 230);
 	font-size:17px;
 	text-decoration:none;
 	transition: text-decoration 0.3s ease;
@@ -100,7 +100,7 @@ body{
 }
 
 .textop2{
-	color: rgb(190, 188, 185);
+	color: rgb(230, 230, 230);
 	font-size:17px;
 	text-decoration:none;
 	transition: text-decoration 0.3s ease;
@@ -122,6 +122,7 @@ body{
 
 .textop:hover, .textop0:hover, .textop1:hover, .textop2:hover{
 	text-decoration:underline;
+	
 }
 
 video {
@@ -136,7 +137,7 @@ video {
 	opacity:45%;
 }
 p, h1{
-	color:rgb(209, 204, 194)
+	color: rgb(230, 230, 230);
 }
 
 div{
@@ -261,17 +262,17 @@ footer{
     text-align: center;
 }
 @media (max-width: 768px) {
+    .head th {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
     h1.animated-title {
-        font-size: 40px; 
+        font-size: 32px;
     }
-
-    img.animated-image-left, img.animated-image-right {
-        width: 100%; 
-        box-shadow: none; 
-    }
-
-    p.animated-text-right, p.animated-text-left {
-        font-size: 16px; 
+    img {
+        width: 100%;
+        max-width: 100%;
     }
 }
 .rezerva {
@@ -289,9 +290,8 @@ footer{
 }
 
 .rezerva:hover {
-    border: 3px solid rgba(26, 24, 21, 30%);
-    background-color: rgb(190, 185, 175);
-    color: rgb(26, 24, 21);
+    box-shadow: 0 0 10px rgba(190, 185, 175, 0.7);
+    transform: scale(1.05);
 }
 .modal {
     display: none; 
@@ -323,3 +323,90 @@ footer{
     font-size: 24px; 
     cursor: pointer;
 }
+
+a {
+    transition: color 0.3s ease-in-out;
+}
+a:hover {
+    color: rgb(190, 185, 175);
+}
+/* Stil general pentru secțiunea responsive */
+.responsive-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Spațiu între rânduri */
+    padding: 20px;
+}
+
+/* Stil pentru fiecare rând (un rând conține imagine + text) */
+.responsive-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Reverse pentru alternarea poziției imagine-text */
+.responsive-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Stil pentru fiecare element (imagine sau text) */
+.responsive-item {
+    flex: 1 1 45%; /* Fiecare element ocupă 45% din lățimea containerului */
+    text-align: center;
+}
+
+/* Imagini */
+.responsive-image {
+    width: 700px;
+    max-width: 100%; /* Dimensiune maximă pentru imagini */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Umbra imaginii */
+    transition: transform 0.3s ease;
+}
+
+.responsive-image:hover {
+    transform: scale(1.05); /* Efect hover pe imagine */
+}
+
+/* Text */
+.responsive-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(230, 230, 230);
+    margin: 0;
+    padding: 10px;
+}
+
+/* Reguli pentru ecrane mai mici */
+@media (max-width: 768px) {
+    .responsive-row {
+        flex-direction: column; /* Aliniază elementele pe verticală */
+    }
+
+    .responsive-item {
+        flex: 1 1 100%; /* Elemente pe toată lățimea containerului */
+    }
+
+    .responsive-image {
+        max-width: 100%; /* Lățime completă pentru imagini */
+    }
+
+    .responsive-text {
+        font-size: 16px; /* Font mai mic pentru ecrane mici */
+    }
+}
+
+/* Reguli pentru ecrane foarte mici (sub 480px) */
+@media (max-width: 480px) {
+    .responsive-text {
+        font-size: 14px;
+    }
+
+    .responsive-image {
+        max-width: 90%;
+    }
+}
+

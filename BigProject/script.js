@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     closeModal.onclick = () => {
         modal.style.display = 'none'; // Ascunde modalul când este apăsat butonul de închidere
     };
-
+	
     window.onclick = (event) => {
         if (event.target === modal) {
             modal.style.display = 'none'; // Ascunde modalul la click în afara conținutului
