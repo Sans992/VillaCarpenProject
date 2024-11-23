@@ -294,7 +294,7 @@ footer{
     transform: scale(1.05);
 }
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -306,12 +306,13 @@ footer{
     justify-content: center;
     align-items: center;
 }
-/* Conținutul modalului */
+
+
 .modal-content {
     background-color: #fff;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
-    width: 400px;
+    width: 500px;
     text-align: center;
 }
 
