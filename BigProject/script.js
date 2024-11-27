@@ -1,3 +1,4 @@
+// "good luck pentru mine si tot cei care o sa citeasca acest cod" WJT 
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById('modal');
     const openModalButtons = document.querySelectorAll('.openModal'); // Selectează toate elementele cu clasa openModal

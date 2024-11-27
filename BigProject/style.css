@@ -1,3 +1,4 @@
+/* "good luck pentru mine si tot cei care o sa citeasca acest cod" WJT */
 body{
 	background-color:rgb(26, 24, 21);
 	font-family: 'Times New Roman', serif;
@@ -61,6 +62,8 @@ body{
 	transition: text-decoration 1s ease;
 	max-width:100%;
 	height:auto;
+	position: relative;
+
 }
 
 .mimg{
@@ -76,6 +79,8 @@ body{
 	transition: text-decoration 1s ease;
 	max-width:100%;
 	height:auto;
+	position: relative;
+
 }
 
 .mimg0{
@@ -91,6 +96,7 @@ body{
 	transition: text-decoration 0.3s ease;
 	max-width:100%;
 	height:auto;
+	position: relative;
 }
 
 .mimg1{
@@ -106,6 +112,7 @@ body{
 	transition: text-decoration 0.3s ease;
 	max-width:100%;
 	height:auto;
+	position: relative;
 }
 
 .mimg2{
@@ -124,6 +131,17 @@ body{
 	text-decoration:underline;
 	
 }
+/*
+.textop::before, .textop0::before, .textop1::before, .textop2::before{
+	content: "";
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+	position:absolute;
+}
+.textop:hover::before, .textop0:hover::before, .textop1:hover::before, .textop2:hover::before {
+	transform: scaleX(1);
+}
+*/
 
 video {
     position: fixed;
@@ -353,26 +371,23 @@ a:hover {
     flex-direction: row-reverse;
 }
 
-/* Stil pentru fiecare element (imagine sau text) */
 .responsive-item {
     flex: 1 1 45%; /* Fiecare element ocupă 45% din lățimea containerului */
     text-align: center;
 }
 
-/* Imagini */
 .responsive-image {
     width: 700px;
-    max-width: 100%; /* Dimensiune maximă pentru imagini */
+    max-width: 100%; 
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Umbra imaginii */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
 
 .responsive-image:hover {
-    transform: scale(1.05); /* Efect hover pe imagine */
+    transform: scale(1.05); /
 }
 
-/* Text */
 .responsive-text {
     font-size: 18px;
     line-height: 1.6;
@@ -392,12 +407,96 @@ a:hover {
     }
 
     .responsive-image {
-        max-width: 100%; /* Lățime completă pentru imagini */
+        max-width: 100%; 
     }
 
     .responsive-text {
-        font-size: 16px; /* Font mai mic pentru ecrane mici */
+        font-size: 16px; 
     }
+/*
+	.logo{
+		display: block; 
+		width:105px;
+		max-width:100%;
+		height:auto;
+		margin-top:-35%;
+		position: absolute;
+		left: 43%;
+	}
+	.textop{
+		color: rgb(230, 230, 230);
+		font-size:17px;
+		text-decoration:none;
+		transition: text-decoration 1s ease;
+		max-width:100%;
+		height:auto;
+		display: block;
+		margin-top:20%;
+		margin-left:1%;
+
+	}
+
+	.mimg{
+	width:27px;
+	max-width:100%;
+	height:auto;
+}
+
+.textop0{
+	color: rgb(230, 230, 230);
+	font-size:17px;
+	text-decoration:none;
+	transition: text-decoration 1s ease;
+	max-width:100%;
+	height:auto;
+	position: relative;
+
+}
+
+.mimg0{
+	width:26px;
+	max-width:100%;
+	height:auto;
+}
+
+.textop1{
+	color: rgb(230, 230, 230);
+	font-size:17px;
+	text-decoration:none;
+	transition: text-decoration 0.3s ease;
+	max-width:100%;
+	height:auto;
+	position: relative;
+}
+
+.mimg1{
+	width:22px;
+	max-width:100%;
+	height:auto;
+}
+
+.textop2{
+	color: rgb(230, 230, 230);
+	font-size:17px;
+	text-decoration:none;
+	transition: text-decoration 0.3s ease;
+	max-width:100%;
+	height:auto;
+	position: relative;
+}
+
+.mimg2{
+	width:23px;
+	max-width:100%;
+	height:auto;
+}
+
+.mimg3{
+	width:25px;
+	max-width:100%;
+	height:auto;
+}
+*/
 }
 
 /* Reguli pentru ecrane foarte mici (sub 480px) */
@@ -410,4 +509,9 @@ a:hover {
         max-width: 90%;
     }
 }
+input{
+	align-items:center;
+	
+}
+
 
