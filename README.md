@@ -25,7 +25,7 @@ Website for a restaurant named VillaCarpen from Moldova
 
 - Introducerea mai multor caracteristici pe main page
 
-- Interfata pentru 
+- Interfata pentru admin
 
 - Culori noi
 
