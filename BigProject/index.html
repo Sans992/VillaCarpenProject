@@ -7,118 +7,200 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-<script src="script.js"></script>
-	<header class="head head animated">
+<body >
+  <div class="splash-screen">
+    <div class="logo-container">
+      <img src="image/logo.png" alt="Logo" class="logoo">
+      <div class="underlinee"></div>
+    </div>
+  </div>
+  <main class="content">
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const splashScreen = document.querySelector('.splash-screen');
+  const content = document.querySelector('.content');
+
+  // După 3 secunde ascunde splash screen-ul și arată conținutul
+  setTimeout(() => {
+    splashScreen.classList.add('hiddenn');
+    content.classList.add('show');
+  }, 3000); // Durată redusă
+});
+</script>
+	<div class="start-anime">
+	</div>
+	<header class="head animated-head">
 		<table style="margin-top:-6px">
 			<tr>
 				<th width="15%">
-					<a href="page/meniu.html" class="textop"> Meniu</a>
+					<a href="#meniu" class="textop"> Meniu</a>
 					<a href="page/meniu.html"><img src="image/menu.png" class="mimg"></a>
 				</th>
 				<th width="15%">
-					<a href="page/despre.html" class="textop1">Despre noi</a>
-					<a href="page/despre.html"><img src="image/about.png" class="mimg1"></a>
+					<a href="#despre" class="textop1">Despre noi</a>
 				</th>
 				<th width="15%">
-					<a href="page/event.html" class="textop2">Evenimente</a>
-					<a href="page/event.html"><img src="image/event.png" class="mimg2"></a>
+					<a href="#evenimente" class="textop2">Evenimente</a>
 				</th>
 				<th >
 					<a href="index.html"><img src="image/logo.png" alt="Logo" class="logo" ></a>
 				</th>
-				<th width="15%" style="text-align:right">
+				<th width="20%" style="text-align:right">
 					<a href="page/contacte.html" class="textop0" >Contacte</a>
 					<a href="page/contacte.html"><img src="image/tel.png" class="mimg0"></a>
 				</th>
-				<th >
-					<p style="margin-left:30%;margin-top:7%;" class="rezerva openModal">Rezervare</p>
+				<th  width="16%" style="max-width:100%">
+					<button type="button" style="margin-left:30%;margin-top:3%;" class="rezerva openModal" >Rezervare</button>
 				</th>
 			</tr>
 		</table> 
 		</header>
 			<video autoplay muted loop id="videoback" alt="video pe fundal" >
-				<source src="video/cooking.mp4" type="video/mp4" size="100px">
-			</video><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<source src="video/cooking.mp4" type="video/mp4">
+			</video><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<nav style="margin-top:-80px">
 				<h1 style="margin-left:80px;font-size:40px;animation: slideLeft 1s ease-out forwards;" >Petrece cele mai frumoase momente<br> impreuna cu VillaCarpen</h1>
-				<p style="margin-left:80px;animation: slideLeft 1s ease-out forwards;" class="rezerva openModal">Rezervare</p>
+				<button type="button" style="margin-left:80px;animation: slideLeft 1s ease-out forwards;" class="rezerva openModal">Rezervare</button>
 			</nav>
 			<br><br><br><br><br><br><br><br>
 		<div class="container" style="padding:60px;">
 				<br><br><br><br><br>
-			<h1 style="text-align:center;font-size:60px" class="hidden animated-title">Villa Carpen</h1><br><br><br><br><br>
-<section class="responsive-section">
+<div>
+			<h1 style="text-align:center;font-size:60px" class="hidden animated-title underlined">Villa Carpen</h1><br><br><br><br><br>
+<section class="responsive-section" style="max-width:2000px;">
     <!-- Primul rând: Imagine stânga, Text dreapta -->
     <div class="responsive-row">
         <div class="responsive-item">
-            <img src="image/poza0.png" alt="Image 1" class="responsive-image <!--hidden animated-image-left-->" style="box-shadow: -12px 12px 1px 0px rgb(209, 204, 194);">
+            <img src="image/poza0.png" alt="Image 1" class="responsive-image" style="box-shadow: -12px 12px 1px 0px rgb(209, 204, 194);"> <!--hidden animated-image-left-->
         </div>
         <div class="responsive-item">
-            <p class="responsive-text hidden animated-text-right">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit justo nec lorem auctor, eget mattis dui accumsan. Maecenas et elit vitae lacus vulputate ullamcorper quis in ex. Ut at tristique mi, et luctus dolor. Cras imperdiet quam nulla, a eleifend augue aliquam eu. Praesent mattis semper massa. Proin a convallis neque, nec commodo velit. Donec quis magna ut leo.
+            <p class="responsive-text hidden animated-text-right " style="font-size:23px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
         </div>
     </div>
 <br><br><br>
     <!-- Al doilea rând: Text stânga, Imagine dreapta -->
-    <div class="responsive-row reverse">
+    <div class="responsive-row reverse" >
         <div class="responsive-item">
-			<img src="image/poza0.png" alt="Image 2" class="responsive-image <!--hidden animated-image-right-->" style="box-shadow: 12px 12px 1px 0px rgb(209, 204, 194);">
+			<img src="image/poza0.png" alt="Image 2" class="responsive-image " style="box-shadow: 12px 12px 1px 0px rgb(209, 204, 194);"> <!--hidden animated-image-right-->
         </div>
         <div class="responsive-item">
-           <p class="responsive-text hidden animated-text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit justo nec lorem auctor, eget mattis dui accumsan. Maecenas et elit vitae lacus vulputate ullamcorper quis in ex. Ut at tristique mi, et luctus dolor. Cras imperdiet quam nulla, a eleifend augue aliquam eu. Praesent mattis semper massa. Proin a convallis neque, nec commodo velit. Donec quis magna ut leo.
+           <p class="responsive-text hidden animated-text-left " style="font-size:23px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             </p>
         </div>
-    </div>
-<br><br><br>
-    <!-- Al treilea rând: Imagine stânga, Text dreapta -->
-    <div class="responsive-row">
-        <div class="responsive-item">
-            <img src="image/poza0.png" alt="Image 3" class="responsive-image <!--hidden animated-image-left-->" style="box-shadow: -12px 12px 1px 0px rgb(209, 204, 194);">
-        </div>
-        <div class="responsive-item">
-            <p class="responsive-text hidden animated-text-right">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit justo nec lorem auctor, eget mattis dui accumsan. Maecenas et elit vitae lacus vulputate ullamcorper quis in ex. Ut at tristique mi, et luctus dolor. Cras imperdiet quam nulla, a eleifend augue aliquam eu. Praesent mattis semper massa. Proin a convallis neque, nec commodo velit. Donec quis magna ut leo.
-            </p>
-        </div>
-    </div>
-</section>
-<br><br><br><br><br><br><br><br><br><br>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div >
+			<h1 style="text-align:center; font-size:60px" class="underlined" id="galerie">Galerie</h1>
+	<div class="gallery-container" >
+		<div class="gallery-column">
+			<img src="image/poza0.png" style="padding:5px;">
 		</div>
-		<footer>
-			<table>
-				<tr>
-					<th width="8%">
-						<a href="https://www.instagram.com/villa_carpen/" target="_blank"><img src="image/instaun.png" class="insta" width="350px"></a>
-					</th>
-					<th width="8%">
-						<a href="https://www.facebook.com/villacarpens" target="_blank"><img src="image/facebookun.png" class="face" width="350px"></a>
-					</th>
-				</tr>
-						<p style="text-align:center">&copy</p>
-			</table>
-		</footer>
-<div id="modal" class="modal">
-    <div class="modal-content" style="background-color:rgb(26, 24, 21);color:rgb(190, 188, 185)">
+		<div class="gallery-column">
+			<img src="image/poza0.png" style="padding:5px">
+		</div>
+		<div class="gallery-column">
+			<img src="image/poza0.png" style="padding:5px">
+		</div>
+		<div class="gallery-column">
+			<img src="image/poza0.png" style="padding:5px">
+		</div>
+		<div class="gallery-column">
+			<img src="image/poza0.png" style="padding:5px">
+		</div>
+		<div class="gallery-column">
+			<img src="image/poza0.png" style="padding:5px">
+		</div>
+		<div class="gallery-column">
+			<img src="image/poza0.png" style="padding:5px">
+		</div>
+		<div class="gallery-column">
+			<img src="image/poza0.png" style="padding:5px">
+		</div>
+	</div>
+	</div>
+	<div class="gallery-overlay">
+		<span class="closebtn">&times;</span>
+		<img src="" alt="">
+		<div id="imageText"></div>
+	</div>
+</section><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+		<h1 style="text-align:center;font-size:60px;margin-top:-150px" class="hidden animated-title underlined " id="despre">Despre noi</h1>
+		<p style="font-size:40px;text-align:center" class="despre-noi-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris.</p><br><br><br>
+		<a href="page/despre.html" style="text-decoration: none;margin-left:90%;width:140px;height:45px;font-size:17px;" class="rezerva">Despre Noi</a>
+		<button type="button" style="margin-left:1200px;width:140px;height:45px;font-size:17px;display:none" class="rezerva " id="togglePanel" >Mai Multe</button>
+			<div id="overlay"></div>
+				<div id="sidePanel" style="	background-color:rgb(26, 24, 21);color: rgb(230, 230, 230);font-size:20px;text-align:center;display:none">
+					<button id="closePanel" >Închide</button>
+				</div>
+				
+	<div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<h1 style="text-align:center;font-size:60px;" class="underlined" id="meniu">Meniu</h1><br><br><br>
+		<p style="font-size:40px;text-align:center;">Bauturi</p>
+		<p class="pointpoz">&#46</p><p class="meniupoz">Calde</p><br>
+		<p class="pointpoz">&#46</p><p class="meniupoz">Reci</p><br>
+		<p class="pointpoz">&#46</p><p class="meniupoz" >Alcoolice</p><br><br><br>
+		
+		<p style="font-size:40px;text-align:center;">****</p>
+		<p class="pointpoz">&#46</p><p class="meniupoz">****</p><br>
+		<p class="pointpoz">&#46</p><p class="meniupoz">****</p><br>
+		<p class="pointpoz">&#46</p><p class="meniupoz">****</p><br><br><br>
+
+		<p style="font-size:40px;text-align:center;">****</p>
+		<p class="pointpoz">&#46</p><p class="meniupoz">****</p><br>
+		<p class="pointpoz">&#46</p><p class="meniupoz">****</p><br>
+		<p class="pointpoz">&#46</p><p class="meniupoz">****</p><br><br><br><br><br><br>
+		
+		<a href="page/meniu.html" style="text-decoration:none;margin-left:90%" class="rezerva">Meniu</a>
+	</div><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<h1 style="text-align:center;font-size:60px;" class="underlined" id="evenimente">Evenimente</h1><br><br><br>
+	<div>
+	
+	    <div class="container ">
+        <div class="poza"></div>
+		<img src="image/poza0.png" style="margin-top:10px;margin-left:23px;width:670px;height:400px">	 
+		<p style="font-size:27px;margin-top:-350px;margin-left:940px;margin-right:150px;" class="evenimente-container">Zi de nastere</p>
+		<p style="font-size:23px;margin-top:50px;margin-left:720px;margin-right:150px;box-sizing: border-box;" class="evenimente-container">Sed vitae egestas nisi. Suspendisse lacinia est in tellus ornare consectetur. Phasellus tortor libero, blandit ut aliquam id, laoreet a ligula. Phasellus in faucibus arcu. Aenean suscipit tempor luctus. Duis ullamcorper magna arcu, ut efficitur urna rhoncus eget. Morbi maximus, turpis vel euismod sagittis, sapien diam eleifend ligula, et laoreet odio nibh vitae turpis. Suspendisse in diam et velit dignissim volutpat vitae quis elit.</p>
+    </div><br><br><br><br><br><br><br>
+	<a href="page/event.html" style="text-decoration:none;margin-left:90%" class="rezerva">Evenimente</a>
+	</div><br><br><br><br><br>
+</div>
+	
+	
+
+<div id="modal" class="modal" >
+    <div class="modal-content" style="background-color:rgb(26, 24, 21);color:rgb(190, 188, 185);text-align:center">
         <span class="close">&times;</span>
         <h2>Introducere date pentru rezervare</h2>
-        <form>
+        <form action="http://localhost:3000/rezerva" method="POST">
 			<label for="np">Nume Prenume</label>
-            <input type="text" id="np" name="np" required><br><br>
+            <input type="text" id="np" name="np" required><br><br> 
 			<label for="tel email">Telefon/Email</label>
-            <input type="email tel" id="email/tel" name="email/tel" required><br><br>
-            <label for="date">Data:</label>
-            <input type="date" id="date" name="date" required ><br><br>
+            <input type="email tel" id="email/tel" name="email/tel:" required><br><br>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data:" required ><br><br>
             <label for="time">Ora:</label>
-            <input type="time" id="time" name="time" required ><br><br>
+            <input type="time" id="time" name="timpul:" required ><br><br>
 			<label for="persoane">Persoane</label>
-            <input type="number" id="persoane" name="personane" required ><br><br>
+            <input type="number" id="persoane" name="personane:" required ><br><br>
+			<label for="informatie:">Informații suplimentare</label>
+            <input type="text" id="informatie:" name="informatie:"><br><br>
 			<button type="submit">Trimite</button>
         </form>
     </div>
 </div>
+</div>
 
+<div style="padding:0px;">
+	<footer >
+		<p style="text-align:center">&copy Villa Carpen</p>
+	</footer>
+</div>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>

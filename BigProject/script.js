@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const openModalButtons = document.querySelectorAll('.openModal'); // Selectează toate elementele cu clasa openModal
     const closeModal = document.querySelector('.close');
 
-    // Asigură-te că modalul este ascuns la încărcare
+    // Asigură că modalul este ascuns la încărcare
     modal.style.display = 'none';
 
     // Adaugă un eveniment de clic pentru fiecare buton Rezervare
@@ -25,4 +25,53 @@ document.addEventListener("DOMContentLoaded", () => {
             modal.style.display = 'none';
         }
     };
+});
+
+const togglePanelButton = document.getElementById('togglePanel');
+const closePanelButton = document.getElementById('closePanel');
+const sidePanel = document.getElementById('sidePanel');
+const overlay = document.getElementById('overlay');
+
+togglePanelButton.addEventListener('click', () => {
+  sidePanel.classList.add('active');
+  overlay.classList.add('active');
+});
+
+closePanelButton.addEventListener('click', () => {
+  sidePanel.classList.remove('active');
+  overlay.classList.remove('active');
+});
+
+overlay.addEventListener('click', () => {
+  sidePanel.classList.remove('active');
+  overlay.classList.remove('active');
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const galleryOverlay = document.querySelector('.gallery-overlay');
+    const expandedImage = document.querySelector('.gallery-overlay img');
+    const imageText = document.querySelector('#imageText');
+    const closeButton = document.querySelector('.gallery-overlay .closebtn');
+
+    // Funcția pentru a afișa imaginea extinsă
+    document.querySelectorAll('.gallery-column img').forEach(img => {
+        img.addEventListener('click', () => {
+            expandedImage.src = img.src;
+            imageText.textContent = img.alt;
+            galleryOverlay.style.display = 'flex';
+        });
+    });
+
+    // Funcția pentru a închide imaginea extinsă
+    closeButton.addEventListener('click', () => {
+        galleryOverlay.style.display = 'none';
+    });
+
+    // Închiderea imaginii extinse când se face clic în afara imaginii
+    galleryOverlay.addEventListener('click', (event) => {
+        if (event.target === galleryOverlay) {
+            galleryOverlay.style.display = 'none';
+        }
+    });
 });

@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
-<script src="../script.js"></script>
 	<header class="head head animated">
 		<table style="margin-top:-6px">
 			<tr>
@@ -26,47 +25,61 @@
 				<th >
 					<a href="../index.html"><img src="../image/logo.png" alt="Logo" class="logo" ></a>
 				</th>
-				<th width="15%" style="text-align:right">
+				<th width="20%" style="text-align:right">
 					<a href="contacte.html" class="textop0" >Contacte</a>
 					<a href="contacte.html"><img src="../image/tel.png" class="mimg0"></a>
 				</th>
-				<th >
-					<p style="margin-left:30%;margin-top:7%;" class="rezerva openModal">Rezervare</p>
+				<th  width="16%" style="max-width:100%">
+					<button type="button" style="margin-left:30%;margin-top:3%;" class="rezerva openModal" >Rezervare</button>
 				</th>
 			</tr>
-		</table> 
+		</table>
 	</header>
 	<div>
-		<section style="margin-left:3%;"><br><br>
-			<table>
-				<tr>
-					<th>
-						<iframe style="max-width:100%" style="max-height:100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2614.984173171542!2d28.3451362!3d46.776887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ca233e6f7c6fff%3A0x808ccd003ebe683!2sVillaCarpen!5e1!3m2!1sen!2s!4v1731690063140!5m2!1sen!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					</th>
-					<th width="150px" style="display:block; margin-top:100%; margin-bottom:25%">
-						<a href="https://www.instagram.com/villa_carpen/" target="_blank"><img src="../image/instaun.png" class="insta"></a>
-					</th>
-					<td width="150px;" style="display:block; margin-left:40%">
-						<a href="https://www.facebook.com/villacarpens" target="_blank"><img src="../image/facebookun.png" class="face" width="350px"></a>
-					</td>
-				</tr>
-			</table>
+		<section style="margin-left:7%;color:rgb(230, 230, 230);"><br><br>
+			    <h1 style="font-size:30px;margin-top:8%">Contactează-ne</h1><br><br>
+				<h3 style="font-size:25px;">+373 680 35 000</h3>
+				<h3 style="font-size:25px;">contact@villacarpen.ro</h3>
+				<h3 style="font-size:20px;">Adresă: Strada Exemplului, Nr. 1, Oraș, România</h3><br>
+				<a href="https://www.instagram.com/villa_carpen/" target="_blank" width="150px" ><img src="../image/instaun.png" class="insta"></a>
+				<a href="https://www.facebook.com/villacarpens" target="_blank"><img src="../image/facebookun.png" class="face" width="150px;" ></a>
 		</section>
 	</div><br><br><br>
+	
+	<div >
+		<h1 style="font-size:30px;margin-left:70%;margin-top:-370px">Orele de lucru</h1><br><br>
+			<h3 style="font-size:25px;margin-left:70%;">*********</h3>
+			<h3 style="font-size:25px;margin-left:70%;">*********</h3><br><br>
+			<button type="button" style="margin-left:70%;" class="rezerva openModal" >Rezervare</button>
+	</div>
+	
+	<div >
+		<iframe style="width:100%;margin-top:200px" style="max-height:100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2614.984173171542!2d28.3451362!3d46.776887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ca233e6f7c6fff%3A0x808ccd003ebe683!2sVillaCarpen!5e1!3m2!1sen!2s!4v1731690063140!5m2!1sen!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
 	<div>
-		<footer>
-			<table>
-				<tr>
-					<th width="200px">
-						<a href="https://www.instagram.com/villa_carpen/" target="_blank"><img src="../image/instaun.png" class="insta"></a>
-					</th>
-					<th width="200px">
-						<a href="https://www.facebook.com/villacarpens" target="_blank"><img src="../image/facebookun.png" class="face"></a>
-					</th>
-				</tr>
-						<p style="text-align:center">&copy</p>
-			</table>
+		<footer style="margin:0">
+			<p style="text-align:center">&copy VillaCarpen</p>
 		</footer>
 	</div>
+<div id="modal" class="modal">
+    <div class="modal-content" style="background-color:rgb(26, 24, 21);color:rgb(190, 188, 185)">
+        <span class="close">&times;</span>
+        <h2>Introducere date pentru rezervare</h2>
+        <form>
+			<label for="np">Nume Prenume</label>
+            <input type="text" id="np" name="np" required><br><br>
+			<label for="tel email">Telefon/Email</label>
+            <input type="email tel" id="email/tel" name="email/tel" required><br><br>
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required ><br><br>
+            <label for="time">Ora:</label>
+            <input type="time" id="time" name="time" required ><br><br>
+			<label for="persoane">Persoane</label>
+            <input type="number" id="persoane" name="personane" required ><br><br>
+			<button type="submit">Trimite</button>
+        </form>
+    </div>
+</div>
+<script src="../script.js"></script>
 </body>
 </html>
