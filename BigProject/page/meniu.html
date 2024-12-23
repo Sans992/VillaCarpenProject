@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
-	<header class="head head animated">
+	<header class="head animated-head">
 		<table style="margin-top:-6px">
 			<tr>
 				<th width="15%">
@@ -16,25 +16,23 @@
 				</th>
 				<th width="15%">
 					<a href="despre.html" class="textop1">Despre noi</a>
-					<a href="despre.html"><img src="../image/about.png" class="mimg1"></a>
 				</th>
 				<th width="15%">
 					<a href="event.html" class="textop2">Evenimente</a>
-					<a href="event.html"><img src="../image/event.png" class="mimg2"></a>
 				</th>
 				<th >
 					<a href="../index.html"><img src="../image/logo.png" alt="Logo" class="logo" ></a>
 				</th>
-				<th width="15%" style="text-align:right">
+				<th width="20%" style="text-align:right">
 					<a href="contacte.html" class="textop0" >Contacte</a>
 					<a href="contacte.html"><img src="../image/tel.png" class="mimg0"></a>
 				</th>
-				<th >
+				<th  width="16%" style="max-width:100%">
 					<button type="button" style="margin-left:30%;margin-top:3%;" class="rezerva openModal" >Rezervare</button>
 				</th>
 			</tr>
 		</table> 
-	</header>
+		</header>
 	
 	<div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<h1 style="text-align:center;font-size:60px;" class="underlined" id="meniu">Meniu</h1><br><br><br>
@@ -132,11 +130,6 @@
 		
 		</div><br><br><br><br><br><br><br><br><br><br><br><br>
 	
-		<footer>
-			<p style="text-align:center">&copy</p>
-		</footer>
-	
-<script src="../script.js"></script>	
   <script>
     // Selectăm toate elementele cu clasa "moremenu"
     const lines = document.querySelectorAll('.moremenu');
@@ -157,5 +150,49 @@
       });
     });
   </script>
+  
+  <div id="modal" class="modal" >
+    <div class="modal-content" style="background-color:rgb(26, 24, 21);color:rgb(190, 188, 185);text-align:center">
+        <span class="close">&times;</span>
+        <h2>Introducere date pentru rezervare</h2>
+        <form action="http://localhost:3000/rezerva" method="POST">
+			<label for="np">Nume Prenume</label>
+            <input type="text" id="np" name="np" required><br><br> 
+			<label for="tel email">Telefon/Email</label>
+            <input type="email tel" id="email/tel" name="email/tel:" required><br><br>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data:" required ><br><br>
+            <label for="time">Ora:</label>
+            <input type="time" id="time" name="timpul:" required ><br><br>
+			<label for="persoane">Persoane</label>
+            <input type="number" id="persoane" name="personane:" required ><br><br>
+			<label for="informatie:">Informații suplimentare</label>
+            <input type="text" id="informatie:" name="informatie:"><br><br>
+			<button type="submit" id="submit-button">Trimite</button>
+		<div class="toast">
+			  <div class="toast-content">
+				<i class="fas fa-solid fa-check check"></i>
+
+				<div class="message">
+				  <span class="text text-1">Success</span>
+				  <span class="text text-2">Masa voastra a fost rezervata</span>
+				</div>
+			  </div>
+			  <i class="fa-solid fa-xmark close"></i>
+			  <div class="progress"></div>
+			</div>
+        </form>
+    </div>
+</div>
+</div>
+
+<div style="padding:0px;">
+
+	<footer >
+		<p style="text-align:center">&copy Villa Carpen</p>
+	</footer>
+	
+<script src="../script.js"></script>	
+</div>
 </body>
 </html>

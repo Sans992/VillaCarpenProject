@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body >
-  <div class="splash-screen">
+<div class="splash-screen">
     <div class="logo-container">
       <img src="image/logo.png" alt="Logo" class="logoo">
       <div class="underlinee"></div>
@@ -27,8 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 3000); // Durată redusă
 });
 </script>
-	<div class="start-anime">
-	</div>
+
 	<header class="head animated-head">
 		<table style="margin-top:-6px">
 			<tr>
@@ -63,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				<button type="button" style="margin-left:80px;animation: slideLeft 1s ease-out forwards;" class="rezerva openModal">Rezervare</button>
 			</nav>
 			<br><br><br><br><br><br><br><br>
-		<div class="container" style="padding:60px;">
+		<div style="padding:60px;">
 				<br><br><br><br><br>
 <div>
 			<h1 style="text-align:center;font-size:60px" class="hidden animated-title underlined">Villa Carpen</h1><br><br><br><br><br>
@@ -71,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- Primul rând: Imagine stânga, Text dreapta -->
     <div class="responsive-row">
         <div class="responsive-item">
-            <img src="image/poza0.png" alt="Image 1" class="responsive-image" style="box-shadow: -12px 12px 1px 0px rgb(209, 204, 194);"> <!--hidden animated-image-left-->
+            <img src="https://images.pexels.com/photos/221433/pexels-photo-221433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Image 1" class="responsive-image" style="box-shadow: -12px 12px 0px 0px rgb(209, 204, 194);"> <!--hidden animated-image-left-->
         </div>
         <div class="responsive-item">
             <p class="responsive-text hidden animated-text-right " style="font-size:23px">
@@ -83,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- Al doilea rând: Text stânga, Imagine dreapta -->
     <div class="responsive-row reverse" >
         <div class="responsive-item">
-			<img src="image/poza0.png" alt="Image 2" class="responsive-image " style="box-shadow: 12px 12px 1px 0px rgb(209, 204, 194);"> <!--hidden animated-image-right-->
+			<img src="https://images.pexels.com/photos/221433/pexels-photo-221433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Image 2" class="responsive-image " style="box-shadow: 12px 12px 0px 0px rgb(209, 204, 194);"> <!--hidden animated-image-right-->
         </div>
         <div class="responsive-item">
            <p class="responsive-text hidden animated-text-left " style="font-size:23px">
@@ -93,33 +92,39 @@ document.addEventListener('DOMContentLoaded', () => {
     </div><br><br><br><br><br><br><br><br><br><br><br><br>
 	<div >
 			<h1 style="text-align:center; font-size:60px" class="underlined" id="galerie">Galerie</h1>
-	<div class="gallery-container" >
-		<div class="gallery-column">
-			<img src="image/poza0.png" style="padding:5px;">
-		</div>
-		<div class="gallery-column">
-			<img src="image/poza0.png" style="padding:5px">
-		</div>
-		<div class="gallery-column">
-			<img src="image/poza0.png" style="padding:5px">
-		</div>
-		<div class="gallery-column">
-			<img src="image/poza0.png" style="padding:5px">
-		</div>
-		<div class="gallery-column">
-			<img src="image/poza0.png" style="padding:5px">
-		</div>
-		<div class="gallery-column">
-			<img src="image/poza0.png" style="padding:5px">
-		</div>
-		<div class="gallery-column">
-			<img src="image/poza0.png" style="padding:5px">
-		</div>
-		<div class="gallery-column">
-			<img src="image/poza0.png" style="padding:5px">
-		</div>
-	</div>
-	</div>
+<div class="container" >
+
+  <div class="slideshow_wrapper" role=slider>
+
+    <input type="radio" name="slide_control" class="slide_control" id="slide1" checked>
+    <input type="radio" name="slide_control" class="slide_control" id="slide2">
+    <input type="radio" name="slide_control" class="slide_control" id="slide3">
+    <input type="radio" name="slide_control" class="slide_control" id="slide4">
+
+    <div class="slideshow">
+
+      <img src=https://images.pexels.com/photos/68147/waterfall-thac-dray-nur-buon-me-thuot-daklak-68147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 class="slideshow_item" id="item1">
+
+      <img src=https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 class="slideshow_item" id="item2">
+
+      <img src=https://images.pexels.com/photos/221433/pexels-photo-221433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 class="slideshow_item" id="item3">
+
+
+
+    </div>
+
+    <div class="controls" >
+
+      <label for="slide1">&nbsp;</label>
+      <label for="slide2">&nbsp;</label>
+      <label for="slide3">&nbsp;</label>
+
+    </div>
+
+  </div>
+
+</div>
+
 	<div class="gallery-overlay">
 		<span class="closebtn">&times;</span>
 		<img src="" alt="">
@@ -128,7 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
 </section><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 		<h1 style="text-align:center;font-size:60px;margin-top:-150px" class="hidden animated-title underlined " id="despre">Despre noi</h1>
-		<p style="font-size:40px;text-align:center" class="despre-noi-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris.</p><br><br><br>
+	<div class="responsive-item">
+		<p style="font-size:40px;text-align:center" class="despre-noi-container responsive-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac purus cursus, varius tortor vitae, tempor odio. Sed sem elit, molestie ullamcorper dui in, cursus laoreet mauris.</p><br><br><br>
+	</div>
 		<a href="page/despre.html" style="text-decoration: none;margin-left:90%;width:140px;height:45px;font-size:17px;" class="rezerva">Despre Noi</a>
 		<button type="button" style="margin-left:1200px;width:140px;height:45px;font-size:17px;display:none" class="rezerva " id="togglePanel" >Mai Multe</button>
 			<div id="overlay"></div>
@@ -159,17 +166,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	<h1 style="text-align:center;font-size:60px;" class="underlined" id="evenimente">Evenimente</h1><br><br><br>
 	<div>
 	
-	    <div class="container ">
         <div class="poza"></div>
-		<img src="image/poza0.png" style="margin-top:10px;margin-left:23px;width:670px;height:400px">	 
+		<img src="https://images.pexels.com/photos/221433/pexels-photo-221433.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="margin-top:10px;margin-left:23px;width:670px;height:400px">	 
 		<p style="font-size:27px;margin-top:-350px;margin-left:940px;margin-right:150px;" class="evenimente-container">Zi de nastere</p>
 		<p style="font-size:23px;margin-top:50px;margin-left:720px;margin-right:150px;box-sizing: border-box;" class="evenimente-container">Sed vitae egestas nisi. Suspendisse lacinia est in tellus ornare consectetur. Phasellus tortor libero, blandit ut aliquam id, laoreet a ligula. Phasellus in faucibus arcu. Aenean suscipit tempor luctus. Duis ullamcorper magna arcu, ut efficitur urna rhoncus eget. Morbi maximus, turpis vel euismod sagittis, sapien diam eleifend ligula, et laoreet odio nibh vitae turpis. Suspendisse in diam et velit dignissim volutpat vitae quis elit.</p>
     </div><br><br><br><br><br><br><br>
 	<a href="page/event.html" style="text-decoration:none;margin-left:90%" class="rezerva">Evenimente</a>
 	</div><br><br><br><br><br>
-</div>
-	
-	
 
 <div id="modal" class="modal" >
     <div class="modal-content" style="background-color:rgb(26, 24, 21);color:rgb(190, 188, 185);text-align:center">
@@ -188,7 +191,19 @@ document.addEventListener('DOMContentLoaded', () => {
             <input type="number" id="persoane" name="personane:" required ><br><br>
 			<label for="informatie:">Informații suplimentare</label>
             <input type="text" id="informatie:" name="informatie:"><br><br>
-			<button type="submit">Trimite</button>
+			<button type="submit" id="submit-button">Trimite</button>
+		<div class="toast">
+			  <div class="toast-content">
+				<i class="fas fa-solid fa-check check"></i>
+
+				<div class="message">
+				  <span class="text text-1">Success</span>
+				  <span class="text text-2">Masa voastra a fost rezervata</span>
+				</div>
+			  </div>
+			  <i class="fa-solid fa-xmark close"></i>
+			  <div class="progress"></div>
+			</div>
         </form>
     </div>
 </div>
@@ -200,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	</footer>
 </div>
 </main>
-
+	
 <script src="script.js"></script>
 </body>
 </html>

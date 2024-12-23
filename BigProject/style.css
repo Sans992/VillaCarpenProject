@@ -4,6 +4,7 @@ body{
 	font-family: 'Times New Roman', serif;
     width: 100%;
     height: 100%;
+	position:static;
 }
 
 .head {
@@ -11,10 +12,9 @@ body{
     margin:-10px;
     background: linear-gradient(to bottom, rgba(26, 24, 21, 0.9), rgba(26, 24, 21, 0.1) 110px);
 	overflow-x: hide;
-	position: static;
-
 
 }
+
 /* Animația pentru a aduce elementul de sus */
 @keyframes slideDown {
     0% {
@@ -107,7 +107,6 @@ body{
 	height:auto;
 }
 
-
 .textop, .textop0, .textop1, .textop2 {
     color: rgb(230, 230, 230);
     font-size: 17px;
@@ -144,6 +143,7 @@ video {
 	opacity:45%;
 	
 }
+
 p, h1, h2, h3, h4, h5, h6{
 	color: rgb(230, 230, 230);
 }
@@ -151,33 +151,40 @@ p, h1, h2, h3, h4, h5, h6{
 div{
 	background-color:rgb(26, 24, 21);
 	margin:-8px;
+	position:static;
 }
+
 footer{
 	padding: 15px;
 	background-color:rgb(23, 21, 18);
 	border: 10px solid rgb(21, 19, 16);
     margin: 0;
-
+	position:static;
 }
+
 .insta{
 	width: 30px; 
 	transition: all 1s ease;
 	max-width:100%;
 	height:auto;
 }
+
 .insta:hover{
 	content: url('image/instacu.png');
 
 }
+
 .face{
 	width: 30px; 
 	transition: all 1s ease;
 	max-width:100%;
 	height:auto;
 }
+
 .face:hover{
 	content: url('image/facebookcu.png')
 }
+
 .mimg, .mimg0, .mimg1, .mimg2 {
     margin-bottom: -6px;
 }
@@ -223,6 +230,7 @@ footer{
     font-size: 20px;
     animation: slideLeft 1s ease-out forwards;
 }
+
 .animated-head {
     animation: slideUp 1s ease-out forwards;
 }
@@ -238,6 +246,7 @@ footer{
         opacity: 1;
     }
 }
+
 @keyframes slideUp {
     0% {
         transform: translateY(-100px); /* Pornește din stânga */
@@ -270,7 +279,6 @@ footer{
         opacity: 1;
     }
 }
-
 
 @media (max-width: 1100px){
 	.responsive-row {
@@ -307,6 +315,7 @@ footer{
     box-shadow: 0 0 10px rgba(190, 185, 175, 0.7);
     transform: scale(1.05);
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -320,7 +329,6 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
 
 .modal-content {
     background-color: #fff;
@@ -342,9 +350,11 @@ footer{
 a {
     transition: color 0.3s ease-in-out;
 }
+
 a:hover {
     color: rgb(190, 185, 175);
 }
+
 /* Stil general pentru secțiunea responsive */
 .responsive-section {
     display: flex;
@@ -389,28 +399,6 @@ a:hover {
 
 .responsive-row.reverse {
     flex-direction: row-reverse;
-}
-.start-anime{
-	margin: 0;
-	padding: 0;
-	height: 100%;	
-	background-color:rgb(230, 230, 230);
-	color:rgb(230, 230, 230);
-
-	animation-duration:3s;	
-	animation-name:anime;
-}
-
-@keyframes anime{
-	0%{
-		opacity:100%
-	}
-	90%{
-		opacity:70%
-	}
-	100%{
-		opacity:0%
-	}
 }
 
 .gallery-container {
@@ -475,7 +463,6 @@ a:hover {
     font-size: 18px;
 }
 
-
 .underlined::after {
     content: '';
     display: block;
@@ -487,9 +474,8 @@ a:hover {
 
 .poza {
     position: relative; /* Necesită pentru plasarea elementelor suplimentare */
-
-
 }
+
 .poza::before {
     content: ''; /* Creează pătratul */
     position: absolute;
@@ -500,6 +486,7 @@ a:hover {
     left: 30px;
 			
 }
+
 .poza::after {
     content: ''; /* Creează linia din centrul pătratului */
     position: absolute;
@@ -526,18 +513,19 @@ a:hover {
 iframe{
 	max-width:100%;
 }
+
 .meniupoz{
 	font-size:30px;
 	display:inline;
 	margin-left:20px;
 	vertical-align: bottom;
 }
+
 .pointpoz{
 	margin-left:20%;
 	font-size:60px;
 	display:inline;
 }
-
 
 .moremenu {
     position: relative;
@@ -565,15 +553,15 @@ iframe{
 }
 
 .splash-screen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
 }
 
 .logo-container {
@@ -591,11 +579,9 @@ iframe{
   animation: underlineExpand 1.5s ease-out forwards 0.5s; /* Durata ajustată */
 }
 
-
 .logoo {
   max-width: 200px;
 }
-
 
 @keyframes fadeInUp {
   to {
@@ -624,3 +610,221 @@ iframe{
 .content.show {
   display: block;
 }
+
+.toast {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  border-radius: 12px;
+  padding: 20px 35px 20px 25px;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.5);
+  border: 1px solid #444; 
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast.active {
+  transform: translateX(0%);
+}
+
+.toast .toast-content {
+  display: flex;
+  align-items: center;
+}
+
+.toast-content .message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.message .text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #cccccc;
+}
+
+.message .text.text-1 {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.toast .close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	padding: 5px;
+	cursor: pointer;
+	opacity: 0.7;
+	color: #fff;
+}
+
+.toast .close:hover {
+  opacity: 1;
+}
+
+.toast .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #444;
+  overflow: hidden;
+}
+
+.toast .progress:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FFC75F; 
+}
+
+.progress.active:before {
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100% {
+    right: 100%;
+  }
+}
+
+.toast.active ~ button {
+  pointer-events: none;
+}
+
+@media(max-width: 768px){
+	
+.textop, .textop0, .textop1, .textop2 {
+	display:none;
+}
+
+.mimg, .mimg0, .mimg1, .mimg2 {
+	display:none;
+}
+
+.rezerva{
+	display:none;
+	
+}
+}
+
+.container{
+    margin:5% auto;
+    width:1200px;
+    height: 800px;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.6);
+    border-radius: 20px;
+}
+
+.slideshow_wrapper {
+    margin:0;
+    width:100%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slideshow_wrapper .slideshow{
+    margin:0;
+    padding:0;
+    list-style: none;
+    position: absolute;
+    left:0.3%;
+    top:0.5%;
+    height: 100%;
+    width:400%;
+    transition: left 0.4s;
+}
+
+input{
+	display : none;
+}
+
+ .slideshow_item{
+    display: inline-block;
+    height: 100%;
+    width:25%;
+    margin:-2px;
+    padding:0;
+}
+
+.controls{
+    position: absolute;
+    display: block;
+    width:100px;
+    margin:45%;
+    transform: translateY(120px);
+	background-color:rgba(1, 1, 1, 0%);
+}
+
+#slide1:checked ~.controls>label:nth-child(1):before{
+    opacity: 1;
+    transform: scale(0.6);
+	margin-left:0.1px;
+	margin-top:1px;
+}
+
+#slide2:checked ~.slideshow{
+    left:-99.7%;
+}
+
+#slide2:checked ~.controls>label:nth-child(2):before{
+    opacity: 1;
+    transform: scale(0.6);
+	margin-left:0.1px;
+	margin-top:1px;
+}
+
+#slide3:checked ~.slideshow{
+    left:-199.7%;
+}
+
+#slide3:checked ~.controls>label:nth-child(3):before{
+    opacity: 1;
+    transform: scale(0.6);
+	margin-left:0.1px;
+	margin-top:1px;
+}
+
+#slide4:checked ~.slideshow{
+    left:-299.7%;
+}
+
+#slide4:checked ~.controls>label:nth-child(4):before{
+    opacity: 1;
+    transform: scale(0.6);
+	margin-left:0.1px;
+	margin-top:1px;
+}
+
+label{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    margin-left: 2px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+label:before{
+    position: absolute;
+    background: rgba(255,255,255,0.6);
+    content: "";
+    border-radius: 100%;
+    opacity: 0;
+    height: 20px;
+    width: 20px;
+    top:0;
+    margin-left: -2px;
+    transform: scale(0);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+

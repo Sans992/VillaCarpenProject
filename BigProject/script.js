@@ -75,3 +75,46 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+  const form = document.querySelector("form"); // Selectează formularul
+  const toast = document.querySelector(".toast");
+  const closeIcon = document.querySelector(".toast .close");
+  const progress = document.querySelector(".progress");
+
+  let timer1, timer2;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault(); // Previne comportamentul implicit al formularului
+
+    // Afișează toast-ul
+    toast.classList.add("active");
+    progress.classList.add("active");
+
+    // Resetează temporizatorul pentru a ascunde toast-ul
+    timer1 = setTimeout(() => {
+      toast.classList.remove("active");
+    }, 5000);
+
+    timer2 = setTimeout(() => {
+      progress.classList.remove("active");
+    }, 5300);
+
+    // După afișarea toast-ului, poți trimite datele folosind `fetch` sau AJAX
+    // Exemplu: simulare trimitere date
+    setTimeout(() => {
+      console.log("Formular trimis cu succes!");
+    }, 1000);
+  });
+
+  closeIcon.addEventListener("click", () => {
+    toast.classList.remove("active");
+
+    setTimeout(() => {
+      progress.classList.remove("active");
+    }, 300);
+
+    clearTimeout(timer1);
+    clearTimeout(timer2);
+  });
+
